@@ -1,0 +1,12 @@
+---
+description: Default frontend work to React with Vite and TailwindCSS
+alwaysApply: true
+---
+
+# Frontend Stack Defaults
+
+- For frontend/UI/client tasks in this repo, use React with Vite unless the user explicitly requests another stack.
+- Use TailwindCSS for styling by default; avoid introducing other CSS frameworks unless requested.
+- Prefer modern React patterns (functional components, hooks, component composition).
+- Keep project structure compatible with standard Vite + React conventions for straightforward local dev and deployment.
+- Use environment variables for frontend runtime configuration and never hardcode secrets in client code.

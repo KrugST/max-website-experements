@@ -1,0 +1,12 @@
+---
+description: Default backend and API work to NestJS conventions for deployment consistency
+alwaysApply: true
+---
+
+# NestJS by Default
+
+- For backend/API/server tasks in this repo, use NestJS as the default framework unless the user explicitly requests otherwise.
+- Prefer standard NestJS structure (`app.module`, modules, controllers, providers, DTOs, validation pipes, config module).
+- Keep code TypeScript-first and aligned with typical Nest CLI project layout to simplify operations and hosting workflows.
+- When proposing new backend services, include environment-driven configuration so deployment platforms (including DigitalOcean) can supply secrets and runtime settings.
+- If an existing non-Nest service must be changed, minimize divergence and recommend a NestJS migration path when appropriate.

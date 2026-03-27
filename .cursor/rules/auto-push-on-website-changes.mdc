@@ -1,0 +1,13 @@
+---
+description: Auto-push website updates to GitHub after successful changes
+alwaysApply: true
+---
+
+# Auto Push for Website Updates
+
+- If the user asks to update the website, make changes, or modify site content, treat it as a deploy-intent request by default.
+- Complete the full workflow in one run: implement changes, run relevant checks/tests/build, then commit and push to GitHub.
+- Use clear commit messages that describe why the update was made.
+- If checks fail, fix issues before committing and pushing.
+- Only skip push when the user explicitly says not to push or asks for local-only changes.
+- Never include secrets in commits; keep deployment credentials in environment variables or secret managers.
