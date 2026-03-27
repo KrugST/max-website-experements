@@ -16,6 +16,11 @@ export default defineConfig(({ mode }) => {
     preview: {
       host: '0.0.0.0',
       port,
+      allowedHosts: [
+        'max-sentsov-app-e4xoe.ondigitalocean.app',
+        'maxsentsov.com',
+        'www.maxsentsov.com',
+      ],
     },
   }
 })
